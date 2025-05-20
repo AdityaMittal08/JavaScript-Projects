@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Application</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+</head>
+<body> 
+  <div class="container">
+    <div class="Todo-app">
+      <h2>My To-Do List <img src="images/check-list.png"></h2>
+      <div class="row">
+        <div class="inputbox" >
+          <input type="text" required="required" id="input-box">
+          <span>Enter your task...</span>
+          <i></i>
+        </div>
+        <button onclick="addTask()">ADD</button>
+      </div>
+      <ul id="list-container">
+        <!-- <li class="checked">
+          <div>
+            <input type="checkbox" class="task-checkbox">
+            <span>task 0</span>
+          </div>
+        </li> -->
+        <!-- <li>task 1</li> -->
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
