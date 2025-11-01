@@ -1,0 +1,551 @@
+body {
+  background-color: #4f3727;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background-color: #e1b382;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.icon_brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#icon {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
+#brand_name {
+  font-size: 35px;
+  margin: 5px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.coffee {
+  color: #4f3727;
+}
+
+.navigation_bar {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  margin-right: 70px;
+}
+
+.navPoints {
+  font-size: 20px;
+  color: #4f3727;
+  position: relative;
+}
+
+.navPoints::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0px;
+  bottom: 0px;
+  width: 0;
+  background: #4f3727;
+  transition: width 0.2s;
+}
+
+.navPoints:hover:after {
+  width: 100%;
+}
+
+.upperPart {
+  background-color: #e1b382;
+  display: flex;
+  justify-content: space-between;
+  border: 8px solid black;
+  margin: 10px;
+  transition: 0.2s;
+  box-shadow: 0px 0px 0 0 #000000;
+}
+
+.upperPart:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.upperTextDiv {
+  display: flex;
+  width: 400px;
+  margin: 10px;
+}
+
+.smiley {
+  color: white;
+  padding-left: 150px;
+}
+
+.upperPartText {
+  color: #4f3727;
+  font-family: "Courier New", Courier, monospace;
+  float: right;
+  font-size: 30px;
+}
+
+.between_text {
+  display: block;
+}
+
+.upperParaDiv {
+  width: 700px;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  margin: 10px;
+}
+
+.upperPara {
+  color: #4f3727;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.butn {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 10px;
+  background-color: #4f3727;
+  color: white;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0 #4f3727;
+  transition: 0.5s;
+}
+
+.butn:hover {
+  box-shadow: -2px 2px 2px #000000;
+  transform: scale(1.1);
+}
+
+video {
+  pointer-events: none;
+  display: block;
+}
+
+.highlight {
+  color: white;
+  display: block;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shortHeading {
+  font-size: 50px;
+  color: #e1b382;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  transition: 0.2s;
+  position: relative;
+}
+
+.shortHeading::after {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  left: 0px;
+  bottom: 0px;
+  width: 0;
+  background: #e1b382;
+  transition: width 0.3s;
+}
+
+.shortHeading:hover:after {
+  width: 100%;
+}
+
+.Card {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.firstCard {
+  background-color: #e1b382;
+  height: 550px;
+  width: 450px;
+  border: 10px solid black;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.firstCard:hover {
+  box-shadow: -2px 2px 2px #000000;
+  transform: scale(1.05);
+}
+
+.image {
+  display: block;
+  width: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cardTitle {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.cardTextDiv {
+  text-align: center;
+  justify-content: center;
+  display: block;
+}
+
+.cardText {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4f3727;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.stars {
+  background-color: #4f3727;
+  text-align: center;
+}
+
+.customerReviewText {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.starsImage {
+  width: 250px;
+}
+
+.review {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.reviewSection {
+  height: 200px;
+  width: 500px;
+  padding: 10px;
+  background-color: #e1b382;
+  border: 8px solid black;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.reviewSection:hover {
+  box-shadow: -2px 2px 2px #000000;
+  transform: scale(1.05);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.userImage {
+  width: 50px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.reviewUser {
+  display: flex;
+  align-items: center;
+}
+
+.reviewImage {
+  width: 125px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.reviewText {
+  color: #4f3727;
+  font-size: 17px;
+}
+
+footer {
+  background-color: #e1b382;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.mainFooter {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  margin: 10px;
+  margin-bottom: 29px;
+}
+
+.leftFooter {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footerTitle {
+  color: white;
+}
+
+.connectWithUs {
+  margin-left: 25px;
+}
+
+.rightFooter {
+  width: 200px;
+}
+
+.quickLinks {
+  margin-bottom: 15px;
+}
+
+.sites {
+  color: #4f3727;
+  text-decoration: underline;
+  display: block;
+  margin: 5px;
+}
+
+#belowFooter {
+  font-size: 15px;
+}
+
+@media (max-width: 992px) {
+    .navigation_bar {
+        width: 350px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center; 
+        padding-bottom: 10px;
+    }
+
+    .icon_brand {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #icon {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 5px;
+        margin-left: 0;
+    }
+    
+    #brand_name {
+        font-size: 28px;
+        margin-left: 5px;
+    }
+
+    .navigation_bar {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0 0 0;
+        align-items: center;
+    }
+
+    .navPoints {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .upperTextDiv {
+        width: 300px;
+    }
+    .upperParaDiv {
+        width: 500px;
+    }
+    .upperPartText {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    .upperPart {
+        flex-direction: column;
+        border-width: 4px; 
+        margin: 5px;
+    }
+
+    .upperPartText {
+        text-align: center;
+    }
+
+    .smiley {
+        padding-left: 0; 
+    }
+
+    .upperTextDiv, .upperParaDiv {
+        width: 100%;
+        margin: 10px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .upperPara {
+        font-size: 16px; 
+        padding: 0 15px; 
+    }
+
+    video {
+        width: 100%; 
+        height: auto;
+    }
+    
+    .upperPart:nth-child(2) {
+        flex-direction: column; 
+    }
+}
+@media (max-width: 1450px) {
+    .Card {
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .firstCard {
+        width: 400px; 
+        margin: 0; 
+        height: auto;
+    }
+    .image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .Card {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .firstCard {
+        width: 90%; 
+        margin: 10px 0;
+    }
+    .cardTitle {
+        font-size: 25px;
+    }
+    .cardText {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1200px) {
+
+    .review {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .reviewSection {
+        width: 45%; 
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .review {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .reviewSection {
+        width: 90%; 
+        height: auto; 
+        padding: 10px;
+    }
+    
+    .reviewText {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 700px){
+  .shortHeading{
+    margin: 0px;
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+    .mainFooter {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding-left: 15px; 
+    }
+
+    .leftFooter {
+        margin-bottom: 10px;
+    }
+
+    .middleFooter {
+        margin: 10px 0;
+    }
+    
+    .connectWithUs {
+        margin-left: 0; 
+    }
+
+    .rightFooter {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    #belowFooter {
+        font-size: 12px;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
